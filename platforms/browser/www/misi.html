@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src *;
+               script-src 'self' 'unsafe-inline' 'unsafe-eval'
+                           127.0.0.1:*
+                           http://*.google.com
+                           http://*.gstatic.com
+                           http://*.googleapis.com
+                           http://*.firebaseio.com
+                           https://*.google.com
+                           https://*.gstatic.com
+                           https://*.googleapis.com
+                           https://*.firebaseio.com
+                           https://*.cloudflare.com
+                           https://*.bootstrapcdn.com
+                           ;
+               style-src  'self' 'unsafe-inline'
+                          127.0.0.1
+                           http://*.google.com
+                           http://*.gstatic.com
+                           http://*.googleapis.com
+                           http://*.firebaseio.com
+                           https://*.google.com
+                           https://*.gstatic.com
+                           https://*.googleapis.com
+                           https://*.firebaseio.com
+                           https://*.cloudflare.com
+                           https://*.bootstrapcdn.com
+                           " />
+    <!-- bootstrap cdn -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Kalam|Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/theme.css"></link>
+    <script src="js/theme.js"></script>
+    <script src="js/misi.js"></script>
+    <title>PADIEMAS</title>
+  </head>
+  <body class='pe-body'>
+    <section class='pe-header'>
+      <div class='container-fluid'>
+        <div class="row">
+          <div class='col-sm-12'>
+            <h3>PADI EMAS</h3>
+            <p>
+              Pacu Diri &amp; Evaluasi Menuju Aktivitas Sukses
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class='pe-header-menu'>
+              <i class="fa fa-pencil fa-2x" aria-hidden="true" data-toggle="collapse" data-target="#pe-menu"></i>
+            </div>
+            <!-- navbar -->
+            <div class="collapse navbar-collapse" id="pe-menu">
+              <ul class="nav navbar-nav pe-nav">
+                <li class="active"><a href="index.html">Pulang</a></li>
+                <li><a href="masalah.html">Aku Bermasalah</a></li>
+                <li><a href="misi.html">Misi Pemecahan</a></li>
+                <li><a href="aksi.html">Aksi Pencapaian</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right pe-nav">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul>
+            </div>
+            <!-- navbar -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class='pe-content'>
+      <div class="container-fluid">
+        <div class="row row-content">
+          <div class="col-sm-12">
+            <div class="content-title">
+              <h4>Daftar Misi Mingguan</h4>
+            </div>
+            <div id="pe-misi-list">
+              <table class='table table-sm pe-table'>
+                <tbody>
+                  <tr>
+                    <td class="td-problem">
+                      <span id="problem-id">Problem 1</span>
+                      <span class="add-mission">
+                        Tambah Misi
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="td-mission list-group">
+                      <li>Mission 1</li>
+                      <li>Mission 2</li>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class='table table-sm pe-table'>
+                <tbody>
+                  <tr>
+                    <td class="td-problem">
+                      <span id="problem-id">Problem 2</span>
+                      <span class="add-mission">
+                        Tambah Misi
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="td-mission list-group">
+                      <li>Mission 1</li>
+                      <li>Mission 2</li>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class='table table-sm pe-table'>
+                <tbody>
+                  <tr>
+                    <td class="td-problem">
+                      <span id="problem-id">Problem 3 hahahah hihihhi huhuhuhu eheheh ihihihir</span>
+                      <span class="add-mission">
+                        Tambah Misi
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="td-mission list-group">
+                      <li>Mission 1</li>
+                      <li>Mission 2</li>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!-- inner window height: <span id='iwh'></span><br/>
+        header height: <span id="hdh"></span -->
+      </div>
+    </section>
+<!-- modals -->
+<div id="frmMission" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Apa misimu.. ?</h4>
+      </div>
+      <div class="modal-body">
+        <div class='form-group' style='display:none'>
+          <input class='form-control' type='text' readonly="readonly" id='pid' />
+        </div>
+        <div class='form-group'>
+          <input class='form-control' type='text' id='mdc' placeholder="Misi penyelesaian"/>
+        </div>
+        <div class='form-group'>
+          <input class='form-control' type='text' id='mtg' placeholder='Target misi'/>
+        </div>
+        <div class='form-group'>
+          <button class='form-control btn btn-primary' id='msb'/>Catat Misiku</button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="frmAction" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Apa Aksimu.. ?</h4>
+      </div>
+      <div class="modal-body">
+        <div class='form-group' style='display:none;'>
+          <input class='form-control' type='text' readonly="readonly" id='mid' />
+        </div>
+        <div class='form-group'>
+          <input class='form-control' type='text' id='adc' placeholder="Apa Aksimu...? "/>
+        </div>
+        <div class='form-group'>
+          <button class='form-control btn btn-primary' id='asb'/>Catat Aksiku</button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- modals -->
+  </body>
+</html>

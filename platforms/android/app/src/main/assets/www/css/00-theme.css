@@ -1,0 +1,31 @@
+.pe-body{
+  background-color: rgb(223, 216, 154); color: rgb(9, 96, 54);
+  font-family: 'Kalam', cursive; font-size: 1.4em;
+}
+
+.pe-row { border: 1px solid black; min-height: 60px;}
+.pe-header{
+  background-color: rgb(64, 42, 5); color: rgb(251, 247, 149);
+  margin: 5px 0; padding: 6px 25px; font-family: 'Roboto Condensed', sans-serif;
+  text-align: center; overflow: hidden; position: fixed; top: 0; width: 100%;
+  z-index: 100;
+}
+.pe-header-brand {float: left; margin-left: 10px;}
+.pe-header-brand > p {font-size: 8pt;}
+.pe-header-menu {float: right; margin-right: 10px; padding: 10px;}
+
+.pe-nav>li>a {color: #FFFFFF;}
+.h1,h2,h3,h4,p {margin: 0;}
+
+.pe-content {  /* position: fixed; */ top: 100; margin: 70px 3% 10px 3%; padding: 2px; min-height: 100%;
+  overflow:auto; width:auto; border: 0px solid red; width: 94%;}
+
+.btn-pe {background-color: rgb(64, 42, 5); color: rgb(251, 247, 149); text-align:center; clear: both;}
+#pe-menu { opacity: 1; color: #FFF;}
+
+
+
+/*
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Kalam', cursive;
+*/

@@ -1,0 +1,62 @@
+.pe-body{
+  background-color: rgb(223, 216, 154); color: rgb(9, 96, 54);
+  font-family: 'Kalam', cursive; font-size: 1.4em;
+}
+
+.pe-header {
+  position: fixed; top: 0; background-color: rgb(64, 42, 5);
+  color: rgb(251, 247, 149); font-family: 'Roboto Condensed', sans-serif;
+  text-align: center; width: 100%; z-index: 10; padding: 20px 10px 10px 10px;
+}
+.pe-header h3, .pe-header p {margin:0;}
+.pe-header h3 {font-size: 12pt;}
+.pe-content { position: fixed; display: block; top: 120px; overflow: auto; width: 100%;}
+.row-content { overflow: auto; border: 0px solid red; height: 400px; display: block;}
+.pe-nav>li>a {color: #FFFFFF;}
+
+.row-content p {font-size: 12pt; text-align: justify; text-indent: 25px;}
+.btn-pe p{background-color: rgb(64, 42, 5); color: rgb(251, 247, 149); text-align:center; clear: both;}
+.problem-list {min-height: 60px; padding: 5px;}
+.pe-problem {display: table-cell; min-height: 60px; padding: 5px 10px; vertical-align: top;}
+.pe-problem p {font-size: 12pt; text-indent: none; text-align: right; margin: 0px;}
+.pe-problem-list {background-color: rgb(235, 227, 157); padding:0px;}
+.pe-problem img {width: 48px; height: 48px;}
+.content-title {background-color: rgb(9, 96, 54); color:rgb(167, 255, 79);
+  text-shadow: 2px 2px 0px #000; padding:2px 15px; border-radius: 4px;
+  margin-bottom: 10px;}
+.table>tbody>tr>td.td-problem { background-color:rgb(167, 255, 79); color: rgb(0,0,0);
+  font-weight: bold; font-size: 12pt; font-family: 'Roboto Condensed', sans-serif;
+  padding: 5px 20px;
+}
+
+.pe-table { border: 2px solid #000; box-shadow: 0px 0px 5px #000;
+  margin: 2px 0px;
+}
+.list-group>li{
+  list-style-type: none; margin: 0; padding: 3px 10px; margin: 1px 0px;
+  color: rgb(64, 42, 5); font-size: 11pt;
+}
+
+.pe-eval{
+  font-family: 'Roboto Condensed', sans-serif; color: rgb(64, 42, 5);
+  font-size: 10pt; padding: 0 10px; border: 0px solid green;
+}
+
+.pe-eval p{ margin: 0; padding: 0; text-indent: 0;}
+.pe-eval>p>label{margin: 0; padding: 0; font-size: 10pt; width: 110px;}
+.pe-eval>p>span{margin: 0; padding: 0; font-size: 10pt;}
+#pe-logo {display:block; width: 80px; margin: 20px auto;}
+#pe-logo>img { width: 100%;}
+.add-mission {float: right; margin-right: 2px; font-size: 10pt;
+  background-color: rgb(196, 22, 22); padding: 4px 6px; border-radius: 3px;
+  color: rgb(241, 231, 105);
+}
+
+#pe-login {display:none; height: 240px; width: 80%; position: absolute;
+  top: 50%; margin-top: -120px; background-color: rgb(133, 10, 135);
+  padding: 10px; margin-left: 10%; border-radius: 0px 20px 0px 20px;}
+#pe-login h2{ color:  #FFF; text-shadow: 2px 2px 3px #000; text-align: center;}
+/*
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Kalam', cursive;
+*/
