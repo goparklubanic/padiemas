@@ -1,7 +1,7 @@
 {
   "name": "com.phonegap.helloworld",
   "version": "1.0.0",
-  "displayName": "PADI EMAS",
+  "displayName": "PENA EMAS",
   "cordova": {
     "platforms": [
       "android"
