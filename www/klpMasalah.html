@@ -45,10 +45,9 @@
     <link href="https://fonts.googleapis.com/css?family=Kalam|Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/theme.css"></link>
     <script src="js/theme.js"></script>
-    <script src="js/index.js"></script>
-    <title>PENAEMAS</title>
+    <script src="js/grpProblem.js"></script>
+    <title>PADIEMAS</title>
   </head>
-
   <body class='pe-body'>
     <section class='pe-header'>
       <div class='container-fluid'>
@@ -56,7 +55,7 @@
           <div class='col-sm-12'>
             <h3>PENA EMAS</h3>
             <p>
-              Perencanan Aksi &amp; Evaluasi Menuju Aktivitas Sukses
+              Perencanaan Aksi &amp; Evaluasi Menuju Aktivitas Sukses
             </p>
           </div>
         </div>
@@ -75,7 +74,8 @@
                 <li><a href="klpMasalah.html">Konseling Kelompok</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right pe-nav">
-                <li><a href="tidur.html"><span class="glyphicon glyphicon-log-out"></span> Keluar</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
               </ul>
             </div>
             <!-- navbar -->
@@ -87,42 +87,17 @@
       <div class="container-fluid">
         <div class="row row-content">
           <div class="col-sm-12">
-            <div id="pe-logo">
-              <img src="img/man2.png" />
+            <div class='content-title'>
+              <h4>Konseling Kelompok</h4>
             </div>
-            <p>
-            Padi emas adalah sebuah metode untuk membantu siswa dalam memecahkan permasalahannya. Baik masalah kepribadian (self problem), masalah belajar (learning problem), masalah karir (acheivement problem), dan masalah sosial (social problem).
-            </p>
-            <p>
-              <b>Masalah Kepribadian</b> adalah permasalahan dalam mengembangkan diri sesuai potensi diri secara optimal, memahami kelebihan dan kelemahannya.
-            </p>
-            <p>
-              <b>Masalah Belajar</b> adalah permasalahan di sekitar siswa dalam  pengengenalan potensi diri dalam belajar, keterampilan belajar, kesiapan menghadapi ujian, memiliki kebiasaan belajar teratur.
-            </p>
-            <p>
-              <b>Masalah Sosial</b> adalah permasalahan yang muncul saat berinteraksi dengan orang lain. Misal ketika berempati terhadap kondisi orang lain, memahami keragaman latar sosial budaya, mengatasi konflik dengan orang lain.
-            </p>
-            <p>
-              <b>Masalah karir</b> adalah permasalahan siswa untuk memiliki pemahaman diri (kemampuan, minat dan kepribadian) yang terkait dengan pekerjaan, mengenali ciri-ciri pekerjaan.
-            </p>
+            <div class="list-group" id="friends"></div>
+            <div class="list-group" id="dukawan" style='display:none'></div>
           </div>
         </div>
         <!-- inner window height: <span id='iwh'></span><br/>
         header height: <span id="hdh"></span -->
       </div>
     </section>
-    <div id="pe-login">
-      <h2>Login Padi Emas</h2>
-      <div class="form-group">
-        <input type="number" id="pelo-nis" class="form-control" maxlength="5"
-        placeholder="Nomor Induk Siswa "/>
-      </div>
-      <div class="form-group">
-        <input type="password" id="pelo-psw" class="form-control" maxlength="16" value="123456"
-        placeholder="Kata sandi" />
-      </div>
-      <div class="form-group">
-        <button class="form-control btn btn-danger" id="pelo-sbm">Masuk .. </button>
-      </div>
-    </div>
+
+  </br/>
   </body>
