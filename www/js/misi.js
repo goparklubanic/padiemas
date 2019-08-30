@@ -19,7 +19,7 @@ $(document).ready( function(){
             tbl+= "<tr>";
             tbl+= "<td class='td-problem'>";
             tbl+= "<span>"+proms[p].problem.pit+"</span>";
-            tbl+= "<span class='add-mission' onClick=addMision("+proms[p].problem.id+")><i class='fa fa-plus'>&nbsp;Misi</i></span>";
+            tbl+= "<span class='add-mission' onClick=addMision("+proms[p].problem.id+")><i class='fa fa-plus'>&nbsp;Program</i></span>";
             tbl+= "</td>";
             tbl+= "</td>";
             tbl+= "</tr>";
