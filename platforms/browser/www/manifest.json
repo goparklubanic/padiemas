@@ -1,11 +1,11 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "PADI EMAS",
-  "short_name": "PADI EMAS",
+  "name": "PENA EMAS",
+  "short_name": "PENA EMAS",
   "version": "com.phonegap.helloworld",
-  "description": "Pacu Diri dan Evaluasi Menuju Aktivitas Sukses",
-  "author": "PhoneGap Team",
+  "description": "Perencanaan Aksi dan Evaluasi Menuju Aktivitas Sukses",
+  "author": "Pondom Coding NuGraha",
   "icons": [],
   "start_url": "index.html"
 }

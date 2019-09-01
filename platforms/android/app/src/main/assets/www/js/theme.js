@@ -1,4 +1,5 @@
-var server = "http://ngh.mugeno.org/padiemas/";
+//var server = "http://ngh.mugeno.org/padiemas/";
+var server = "https://klubaners.web.id/padiemas/";
 $(document).ready( function(){
   dhuwure();
 });

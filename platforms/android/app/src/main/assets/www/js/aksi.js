@@ -1,5 +1,6 @@
 $(document).ready( function(){
-    $.getJSON(server+"receiver.php?obj=aksiku&uid=12345", function(actions){
+    var nis = localStorage.getItem('nis');
+    $.getJSON(server+"receiver.php?obj=aksiku&uid="+nis, function(actions){
       // console.log(actions);
       $("#pe_actions li").remove();
       $.each(actions, function(i,aksi){

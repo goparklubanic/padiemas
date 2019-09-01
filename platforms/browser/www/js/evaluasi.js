@@ -1,5 +1,6 @@
 $(document).ready( function(){
   var act_id = localStorage.getItem('aid');
+  var nis = localStorage.getItem('nis');
   showEvalChat(act_id);
   $.getJSON(
     server+'receiver.php?obj=getaksi&aid='+act_id,
@@ -22,10 +23,11 @@ $(document).ready( function(){
         dst: 'saveMyEval',
         evl: $("#evalOfMine").val(),
         aid: act_id,
-        nis: '12345'
+        nis: nis
       },
       function(response){
         var act_id = localStorage.getItem('aid');
+        $("#evalOfMine").val('');
         showEvalChat(act_id);
       }
     );

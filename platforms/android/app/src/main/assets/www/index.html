@@ -45,16 +45,18 @@
     <link href="https://fonts.googleapis.com/css?family=Kalam|Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/theme.css"></link>
     <script src="js/theme.js"></script>
-    <title>PADIEMAS</title>
+    <script src="js/index.js"></script>
+    <title>PENAEMAS</title>
   </head>
+
   <body class='pe-body'>
     <section class='pe-header'>
       <div class='container-fluid'>
         <div class="row">
           <div class='col-sm-12'>
-            <h3>PADI EMAS</h3>
+            <h3>PENA EMAS</h3>
             <p>
-              Pacu Diri &amp; Evaluasi Menuju Aktivitas Sukses
+              Perencanan Aksi &amp; Evaluasi Menuju Aktivitas Sukses
             </p>
           </div>
         </div>
@@ -68,12 +70,12 @@
               <ul class="nav navbar-nav pe-nav">
                 <li class="active"><a href="index.html">Pulang</a></li>
                 <li><a href="masalah.html">Aku Bermasalah</a></li>
-                <li><a href="misi.html">Misi Pemecahan</a></li>
+                <li><a href="misi.html">Program Pemecahan</a></li>
                 <li><a href="aksi.html">Aksi Pencapaian</a></li>
+                <li><a href="klpMasalah.html">Konseling Kelompok</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right pe-nav">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><a href="tidur.html"><span class="glyphicon glyphicon-log-out"></span> Keluar</a></li>
               </ul>
             </div>
             <!-- navbar -->
@@ -89,10 +91,10 @@
               <img src="img/man2.png" />
             </div>
             <p>
-            Padi emas adalah sebuah metode untuk membantu siswa dalam memecahkan permasalahannya. Baik masalah kepribadian (self problem), masalah belajar (learning problem), masalah karir (acheivement problem), dan masalah sosial (social problem).
+            Pena emas adalah sebuah metode untuk membantu siswa dalam memecahkan permasalahannya. Baik masalah pribadi (self problem), masalah belajar (learning problem), masalah karir (acheivement problem), dan masalah sosial (social problem).
             </p>
             <p>
-              <b>Masalah Kepribadian</b> adalah permasalahan dalam mengembangkan diri sesuai potensi diri secara optimal, memahami kelebihan dan kelemahannya.
+              <b>Masalah Pribadi</b> adalah permasalahan dalam mengembangkan diri sesuai potensi diri secara optimal, memahami kelebihan dan kelemahannya.
             </p>
             <p>
               <b>Masalah Belajar</b> adalah permasalahan di sekitar siswa dalam  pengengenalan potensi diri dalam belajar, keterampilan belajar, kesiapan menghadapi ujian, memiliki kebiasaan belajar teratur.
@@ -109,6 +111,18 @@
         header height: <span id="hdh"></span -->
       </div>
     </section>
-
-  </br/>
+    <div id="pe-login">
+      <h2>Login Pena Emas</h2>
+      <div class="form-group">
+        <input type="number" id="pelo-nis" class="form-control" maxlength="5"
+        placeholder="Nomor Induk Siswa "/>
+      </div>
+      <div class="form-group">
+        <input type="password" id="pelo-psw" class="form-control" maxlength="16" value=""
+        placeholder="Kata sandi" />
+      </div>
+      <div class="form-group">
+        <button class="form-control btn btn-danger" id="pelo-sbm">Masuk .. </button>
+      </div>
+    </div>
   </body>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src *;
+               script-src 'self' 'unsafe-inline' 'unsafe-eval'
+                           127.0.0.1:*
+                           http://*.google.com
+                           http://*.gstatic.com
+                           http://*.googleapis.com
+                           http://*.firebaseio.com
+                           https://*.google.com
+                           https://*.gstatic.com
+                           https://*.googleapis.com
+                           https://*.firebaseio.com
+                           https://*.cloudflare.com
+                           https://*.bootstrapcdn.com
+                           ;
+               style-src  'self' 'unsafe-inline'
+                          127.0.0.1
+                           http://*.google.com
+                           http://*.gstatic.com
+                           http://*.googleapis.com
+                           http://*.firebaseio.com
+                           https://*.google.com
+                           https://*.gstatic.com
+                           https://*.googleapis.com
+                           https://*.firebaseio.com
+                           https://*.cloudflare.com
+                           https://*.bootstrapcdn.com
+                           " />
+    <!-- bootstrap cdn -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Kalam|Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/theme.css"></link>
+    <script src="js/theme.js"></script>
+    <script src="js/genduraos.js"></script>
+    <style>
+    #eval_box{
+      display:block; border: 0px solid #000; height: 100%; overflow: auto;
+    }
+
+    #eval_box > li.list-group-item:nth-child(even) {  background-color: rgb(255, 198, 236); }
+    #eval_box > li.list-group-item:nth-child(odd) {  background-color: rgb(231, 182, 215); }
+    #bottom-spacer { height: 50px; border: 0px dotted black; margin-bottom: 10px;}
+    #shout-box { height: 50px; background-color: rgb(190, 179, 80); position: fixed; bottom: 0;
+      width: 100%; }
+    .personTime {font-size: 9pt; font-family: sans-serif; color: #fff; background: #999;
+    margin: 0 -10px; padding: 0 10px;}
+    </style>
+    <title>PENAEMAS</title>
+  </head>
+  <body class='pe-body'>
+    <section class='pe-header'>
+      <div class='container-fluid'>
+        <div class="row">
+          <div class='col-sm-12'>
+            <h3>PENA EMAS</h3>
+            <p>
+              Perencanan Aksi &amp; Evaluasi Menuju Aktivitas Sukses
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class='pe-header-menu'>
+              <i class="fa fa-pencil fa-2x" aria-hidden="true" data-toggle="collapse" data-target="#pe-menu"></i>
+            </div>
+            <!-- navbar -->
+            <div class="collapse navbar-collapse" id="pe-menu">
+              <ul class="nav navbar-nav pe-nav">
+                <li class="active"><a href="index.html">Pulang</a></li>
+                <li><a href="masalah.html">Aku Bermasalah</a></li>
+                <li><a href="misi.html">Program Pemecahan</a></li>
+                <li><a href="aksi.html">Aksi Pencapaian</a></li>
+                <li><a href="klpMasalah.html">Konseling Kelompok</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right pe-nav">
+                <li><a href="tidur.html"><span class="glyphicon glyphicon-log-out"></span> Keluar</a></li>
+              </ul>
+            </div>
+            <!-- navbar -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class='pe-content'>
+      <div class="container-fluid">
+        <div class="row row-content">
+          <div class="col-sm-12">
+            <div class='content-title'>
+              <h4>Konseling Kelompok</h4>
+            </div>
+
+            <div class='pe-eval'>
+              <p id="probid"></p>
+            </div>
+
+            <div id="eval_box" class="list-group">
+
+            </div>
+            <div id="bottom-spacer">&nbsp;</div>
+
+          </div>
+        </div>
+        <!-- inner window height: <span id='iwh'></span><br/>
+        header height: <span id="hdh"></span -->
+      </div>
+    </section>
+    <div id="shout-box">
+      <table class="table">
+        <tr>
+          <td>
+            <input class="form-control" type="text" id="evalOfMine" />
+          </td>
+          <td width="50px">
+            <button class="btn btn-success" id="evalGo">Kirim</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+  </body>

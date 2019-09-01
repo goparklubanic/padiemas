@@ -1,7 +1,7 @@
 $(document).ready( function(){
-
+  var nis = localStorage.getItem('nis');
   $.getJSON(
-    server+"receiver.php?obj=myprobs&nis=12345",
+    server+"receiver.php?obj=myprobs&nis="+nis,
     function(myprobs){
       console.log(myprobs);
       $("#problem-list li").remove();
@@ -29,7 +29,7 @@ $(document).ready( function(){
      }
       $.post(server+"receiver.php",{
         dst: 'setProblem',
-        nis: '12345',
+        nis: nis,
         tpe: $("#problem-type").val(),
         itm: $("#problem-item").val()
       },function(responses){
